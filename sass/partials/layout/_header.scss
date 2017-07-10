@@ -1,0 +1,12 @@
+.site-header {
+  margin-bottom: $space-base;
+  position: relative;
+  z-index: 5;
+}
+
+.site-nav {
+  padding: .25em 1rem;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 3px solid #000;
+}

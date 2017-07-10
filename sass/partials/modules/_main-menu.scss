@@ -1,0 +1,26 @@
+.main-menu {
+  float: right;
+  padding-top: 0.5rem;
+}
+
+.main-menu__action {
+  border-bottom: 0;
+  display: block;
+  padding: 4px 16px;
+  text-decoration: none;
+}
+
+.main-menu__item {
+  display: inline;
+  float: left;
+}
+
+.main-menu__action:hover{
+  color: $acent-color;
+}
+
+.main-menu__items {
+  font-family: $font-family-contrast;
+  list-style: none;
+  text-transform: uppercase;
+}
