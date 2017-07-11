@@ -7,6 +7,7 @@
     <title>CoCo</title>
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,600,700|Raleway:100,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
     <!--[if lt IE 9]>
     <script type="text/javascript">
       var arr=['article','aside','footer','header','nav','section','figcaption','figure','main','template'];
@@ -51,11 +52,31 @@
       </div>
 
       <main role="main">
+
+        <!-- Section of 'La Casa' -->
         <section class="l-group section-wrap" id="laCasa">
-          <div class="group">
-            <h2 class="h-section">La casa</h2>
-          </div>
+              <div class="group">
+                <h2 class="h-section-optional ">La casa</h2>
+              </div>
+              <nav>
+                    <ul class="main-laCasa__list">
+                      <li><img src="img/pineapple64.png" class="main-laCasa__images draw">Comida Fusión Tropical</li>
+                      <li><img src="img/wifi64.png" class="main-laCasa__images draw">Business Grade Internet</li>
+                      <li><img src="img/meeting64.png" class="main-laCasa__images draw">Meeting Rooms</li>
+                      <li><img src="img/shapes64.png" class="main-laCasa__images draw">Espacios Variados</li>
+                    </ul>
+              </nav>
+              <div class="main-laCasa__slides">
+                    <img src="img/slider01.jpg" alt="" class="gallerySlide">
+                    <img src="img/slider02.jpg" alt="" class="gallerySlide">
+                    <img src="img/slider03.jpg" alt="" class="gallerySlide">
+              </div>
+              <div class="main-laCasa__btns">
+                <button class="btn_left  main-laCasa__btn draw " id="btnleft"><</button>
+                <button class="btn_rigth  main-laCasa__btn  draw"  id="btnright">></button>
+              </div>
         </section>
+        <!-- End section of 'La Casa' -->
 
         <section class="l-group section-wrap" id="porqueCoco">
           <div class="group">
@@ -79,6 +100,6 @@
 
     <footer class="l-group site-footer" id="contacto">
     </footer>
-
+ <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
