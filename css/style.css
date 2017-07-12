@@ -83,6 +83,11 @@ h4 {
   text-align: center;
   text-transform: uppercase; }
 
+.h-section-optional {
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+  margin-right: 500px; }
+
 .h-page {
   color: inherit;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
@@ -210,6 +215,89 @@ svg:not(:root) {
   font-family: "Raleway", sans-serif;
   list-style: none;
   text-transform: uppercase; }
+
+.main-laCasa__list {
+  list-style: none; }
+
+.main-laCasa__images {
+  border-style: solid;
+  border-width: 3px;
+  padding: 0.5rem;
+  margin-right: 13px; }
+
+.main-laCasa__images:hover {
+  background-color: #e5a923;
+  color: #e5a923; }
+
+.main-laCasa__slides {
+  float: right;
+  position: relative;
+  bottom: 382px;
+  right: 80px;
+  border-style: solid;
+  border-width: 4px; }
+
+.main-laCasa__btns {
+  float: right;
+  position: relative;
+  bottom: 230px;
+  left: 91px; }
+
+.main-laCasa__btn {
+  padding: 1.5rem;
+  background: #fff;
+  cursor: pointer;
+  outline: none; }
+
+.btn_rigth {
+  left: 453px; }
+
+#btnleft, #btnright {
+  background-color: #fff; }
+
+.main-laCasa__btn {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: inset 0 0 0 2px #000;
+  color: #000;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative; }
+  .main-laCasa__btn::before, .main-laCasa__btn::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+
+.draw {
+  transition: color 0.25s; }
+  .draw::before, .draw::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0; }
+  .draw::before {
+    top: 0;
+    left: 0; }
+  .draw::after {
+    bottom: 0;
+    right: 0; }
+  .draw:hover {
+    color: #e5a923; }
+  .draw:hover::before, .draw:hover::after {
+    width: 100%;
+    height: 100%; }
+  .draw:hover::before {
+    border-top-color: #e5a923;
+    border-right-color: #e5a923;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+  .draw:hover::after {
+    border-bottom-color: #e5a923;
+    border-left-color: #e5a923;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
 
 .menu {
   margin: 0;

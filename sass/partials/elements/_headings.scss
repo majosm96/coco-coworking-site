@@ -43,7 +43,11 @@ h4 {
   text-align: center;
   text-transform: uppercase;
 }
-
+.h-section-optional {
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+  margin-right: 500px;
+}
 .h-page {
     color: inherit;
     //text-align: center;
