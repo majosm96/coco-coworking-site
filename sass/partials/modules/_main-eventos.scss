@@ -15,8 +15,8 @@ figure{
   overflow: hidden;
   position: relative;
   border:6px solid rgb(229, 169, 35);
-  
-  &:hover{ 
+
+  &:hover{
     border-width:9px;
     .main-eventos__title{
      transform:translate(0,100px)
@@ -28,9 +28,9 @@ figure{
     opacity:1;
      transform:translateY(-60px);
   }
-  
+
   }
-  
+
   & .main-eventos__title{
     position: absolute;
     bottom:0px;
@@ -41,13 +41,13 @@ figure{
     font-size: 25px;
     transition: all 400ms;
     background:rgba(229,169,35,0.9);
-    
+
   }
   & .main-eventos__img{
     width:100%;
     position: absolute;
     transition: all 500ms;
-    
+
   }
 
   }
@@ -59,11 +59,11 @@ figure{
   top:50%;
   left:10%;
   font-size:20px;
-  background: rgba(229,169,35,0.6); 
+  background: rgba(229,169,35,0.6);
   transition: all 300ms;
   text-align:center;
   padding: 14px
-  
+
 }
 #toTop {
     border: 2px solid #000;

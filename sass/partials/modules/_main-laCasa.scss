@@ -2,14 +2,13 @@
 	list-style: none;
 }
 .main-laCasa__images {
-    border-style: solid;
-    border-width: 3px;
+    border: 3px solid black;
     padding: $space-out-tiny;
     margin-right: 13px;
 }
 .main-laCasa__images:hover {
 	background-color: $acent-color;
-	color: $acent-color;
+	border: 3px solid $acent-color;
 }
 .main-laCasa__slides {
     float: right;
