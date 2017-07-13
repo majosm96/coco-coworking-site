@@ -9,3 +9,10 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
+
+#toTop {
+  position:fixed;
+  bottom:5px;
+  right:5px;
+  cursor:pointer;
+}
