@@ -1,7 +1,9 @@
 .site-header {
   margin-bottom: $space-base;
   position: relative;
-  z-index: 5;
+  z-index: 3;
+  position: fixed;
+  width: 100%;
 }
 
 .site-nav {
