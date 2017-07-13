@@ -1,0 +1,88 @@
+.clearFix:after{
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+}
+
+.whycoco-section {
+  width: 90%;
+  //display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.whycoco-section_fact {
+  //width: 25%;
+  margin: $space-out-small;
+  padding: 1rem;
+  display: inline-block;
+  border: 3px solid #000;
+  background-color: #f7f7f7;
+  img {
+    margin-top: $space-out-medium;
+  }
+
+  p {
+    text-align: left;
+    margin-left: $space-out-small;
+  }
+}
+
+.whycoco-section_fact--hover {
+  color: #fff;
+  h3 {
+    color: #fff;
+  }
+}
+
+.comunity{
+  background-image: url(../img/comunity.jpg);
+}
+
+.eco {
+  background-image: url(../img/eco.jpg);
+}
+
+.oneforone {
+  background-image: url(../img/oneforone.jpg);
+}
+.flip-container {
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 320px;
+  height: 480px;
+}
+
+//Give the perpective
+.flipper {
+  // border: 1px solid black;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
