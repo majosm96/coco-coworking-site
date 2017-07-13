@@ -3,18 +3,28 @@
 	padding:0;
 	box-sizing: border-box;
 }
-
-
+.main-eventos__images {
+  width: 50%;
+}
+.main-eventos__left {
+    float: right;
+    position: relative;
+    left: 9px;
+    bottom: 408px;
+}
+.main-eventos__right {
+  right: 10px;
+}
 figure{
   transition: all 200ms;
   display: inline-block;
   margin: 10px;
   background:#000;
-  width:400px;
-  height:300px ;
+  width:50%;
+  height:380px ;
   overflow: hidden;
   position: relative;
-  border:6px solid rgb(229, 169, 35);
+  border:6px solid rgb(0, 0, 0);
 
   &:hover{
     border-width:9px;
@@ -37,10 +47,13 @@ figure{
     padding:10px;
     width:100%;
     text-align:center;
-    color: #000;
+    color: #fff;
+    font-family: $font-family-base;
+    font-weight: $font-family-base-bold-weight;
     font-size: 25px;
     transition: all 400ms;
-    background:rgba(229,169,35,0.9);
+    background:rgba(0, 0, 0, 0.8);
+
 
   }
   & .main-eventos__img{
@@ -62,7 +75,7 @@ figure{
   background: rgba(229,169,35,0.6);
   transition: all 300ms;
   text-align:center;
-  padding: 14px
+  padding: 36px;
 
 }
 #toTop {

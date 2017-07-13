@@ -1,5 +1,8 @@
 .main-laCasa__list {
-	list-style: none;
+      float: left;
+}
+.main-laCasa__listUl {
+  list-style: none;
 }
 .main-laCasa__images {
     border: 3px solid black;
@@ -11,17 +14,19 @@
 	border: 3px solid $acent-color;
 }
 .main-laCasa__slides {
-    float: right;
     position: relative;
-    bottom: 382px;
     right: 80px;
-    border-style: solid; border-width: 4px;
+    border-style: solid;
+    border-width: 4px;
+    float: right;
+
 }
 .main-laCasa__btns{
     float: right;
     position: relative;
-    bottom:  230px;
-    left:  91px;
+    left: 13px;
+    top: 157px;
+
 }
 .main-laCasa__btn {
 	background: #fff;
@@ -29,10 +34,14 @@
 	outline: none
 }
 .btn_rigth {
-	left:  453px;
+	left:  505px;
 }
 #btnleft, #btnright {
 	background-color: #fff;
+      font-size: 44px;
+      font-family: Times New Roman;
+      padding: 8px 16px 8px 16px;
+      margin: 0;
 }
 // Basic styles
 .main-laCasa__btn{
