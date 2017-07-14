@@ -540,7 +540,7 @@ figure {
     width: 100%; }
 
 .section-wrap {
-  padding: 6rem 3rem; }
+  padding: 4rem 4rem; }
 
 .section-wrap--intro {
   position: relative;
@@ -551,8 +551,8 @@ figure {
   text-align: center; }
 
 .section-wrap--tight {
-  padding-bottom: 3rem;
-  padding-top: 3rem; }
+  padding-bottom: 4rem;
+  padding-top: 4rem; }
 
 .wrapper {
   background-color: #fff; }
