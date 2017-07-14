@@ -1,8 +1,49 @@
 .site-footer {
     @include micro-clearfix;
-    //background-color: #000;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    width: 100%;
+
+    i {
+      margin: 0 $space-out-small 0 $space-out-small;
+      font-size: 30px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    a:hover {
+      color: $acent-color;
+    }
 }
 
 .contact-footer {
     padding: $space-base;
+}
+
+.footer__section {
+  padding: $space-base;
+  width: 50%;
+  margin: 0;
+}
+
+.footer__social-media {
+  text-align: right;
+
+  ul {
+    padding: $space-medium $space-small 0 0;
+  }
+
+  li {
+    display: inline;
+  }
+  i {
+    margin: $space-out-tiny;
+  }
 }

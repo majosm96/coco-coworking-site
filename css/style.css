@@ -581,13 +581,41 @@ figure {
 .wrapper {
   background-color: #fff; }
 
-.site-footer:before, .site-footer:after {
-  content: " ";
-  display: table; }
-.site-footer:after, .site-footer:after {
-  clear: both; }
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  width: 100%; }
+  .site-footer:before, .site-footer:after {
+    content: " ";
+    display: table; }
+  .site-footer:after, .site-footer:after {
+    clear: both; }
+  .site-footer i {
+    margin: 0 1.5rem 0 1.5rem;
+    font-size: 30px; }
+  .site-footer li {
+    list-style: none; }
+  .site-footer a {
+    color: #fff; }
+  .site-footer a:hover {
+    color: #e5a923; }
 
 .contact-footer {
   padding: 1.5rem; }
+
+.footer__section {
+  padding: 1.5rem;
+  width: 50%;
+  margin: 0; }
+
+.footer__social-media {
+  text-align: right; }
+  .footer__social-media ul {
+    padding: 3rem 1.5rem 0 0; }
+  .footer__social-media li {
+    display: inline; }
+  .footer__social-media i {
+    margin: 0.5rem; }
 
 /*# sourceMappingURL=style.css.map */
