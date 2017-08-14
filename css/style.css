@@ -94,7 +94,7 @@ h4 {
 .h-page {
   color: inherit;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
-  margin-top: 20rem;
+  text-transform: uppercase;
   margin-bottom: 0; }
 
 .h3-page {
@@ -580,6 +580,9 @@ figure {
 
 .wrapper {
   background-color: #fff; }
+
+.logo-img {
+  margin-top: 10rem; }
 
 .site-footer {
   background-color: #000;
