@@ -472,7 +472,7 @@ figure {
   z-index: 1;
   opacity: 1;
   padding: 30px 0 30px 10px;
-  background-color: #ffffff;
+  background-color: #e5a923;
   width: 40%;
   -webkit-transform: translateX(150%);
   transform: translateX(150%); }
@@ -488,7 +488,7 @@ figure {
   height: 0;
   border-style: solid;
   border-width: 120px 120px 120px 0;
-  border-color: transparent #ffffff transparent transparent; }
+  border-color: transparent #e5a923 transparent transparent; }
 
 .snip:after {
   position: absolute;
@@ -528,7 +528,7 @@ figure {
   left: 0;
   padding: 20px 30px;
   font-size: 44px;
-  color: #ffffff;
+  color: #e5a923;
   opacity: 0; }
 
 .snip a {
