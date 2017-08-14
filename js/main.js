@@ -14,6 +14,7 @@ function showDivs(n) {
 	if (n > images.length) { indexSlider = 1}
 	if (n < 1) {indexSlider = images.length}
 
+
 	for (var i = 0; i < images.length; i++) {
 		images[i].style.display = 'none';
 	}
@@ -23,12 +24,67 @@ function showDivs(n) {
 
 btnleft.addEventListener('click', function(){
 	plusDivs(-1);
+	if(count == 1){
+		count=4;
+		colors();
+	} else {
+		count-=1;
+		colors();	
+	}
+	
 });
 
 btnright.addEventListener('click', function(){
 	plusDivs(1);
+	if(count == 4){
+		count=1;
+		colors();
+	} else {
+		count+=1;
+		colors();	
+	}
 });
 
+
+var count = 0;
+
+function colors() {
+
+	switch (count) {
+		case 1 : 
+			document.getElementById('image4').classList.remove('main-laCasa_colores');
+			document.getElementById('image3').classList.remove('main-laCasa_colores');
+			document.getElementById('image2').classList.remove('main-laCasa_colores');
+			document.getElementById('image1').classList.add('main-laCasa_colores');
+			break;
+		case 2:
+			document.getElementById('image4').classList.remove('main-laCasa_colores');
+			document.getElementById('image3').classList.remove('main-laCasa_colores');
+			document.getElementById('image2').classList.add('main-laCasa_colores');
+			document.getElementById('image1').classList.remove('main-laCasa_colores');
+			break;
+		case 3:
+			document.getElementById('image4').classList.remove('main-laCasa_colores');
+			document.getElementById('image3').classList.add('main-laCasa_colores');
+			document.getElementById('image2').classList.remove('main-laCasa_colores');
+			document.getElementById('image1').classList.remove('main-laCasa_colores');
+			break;
+		case 4:
+			document.getElementById('image4').classList.add('main-laCasa_colores');
+			document.getElementById('image3').classList.remove('main-laCasa_colores');
+			document.getElementById('image2').classList.remove('main-laCasa_colores');
+			document.getElementById('image1').classList.remove('main-laCasa_colores');
+			break;
+	}
+}
+
+
+/************************************* Jquery*******************************/
+
+/***
+* This function make a jump to section in the OnePage and 
+* the arrow faceOut and FadeIn with an effect slow
+***/
 
 $(function() {
 	$.fn.scrollToTop=function(){
@@ -53,3 +109,25 @@ $(function() {
 $(function(){
 	$("#toTop").scrollToTop();
 });
+
+
+
+$(function(){
+	var $gallery = $('.gallery a').simpleLightbox();
+
+	$gallery.on('show.simplelightbox', function(){})
+	.on('shown.simplelightbox', function(){})
+	.on('close.simplelightbox', function(){})
+	.on('closed.simplelightbox', function(){})
+	.on('change.simplelightbox', function(){})
+	.on('next.simplelightbox', function(){})
+	.on('prev.simplelightbox', function(){})
+	.on('nextImageLoaded.simplelightbox', function(){})
+	.on('prevImageLoaded.simplelightbox', function(){})
+	.on('changed.simplelightbox', function(){})
+	.on('nextDone.simplelightbox', function(){})
+	.on('prevDone.simplelightbox', function(){})
+	.on('error.simplelightbox', function(e){});
+});
+
+

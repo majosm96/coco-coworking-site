@@ -5,6 +5,8 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoCo</title>
+    <link href='dist/simplelightbox.css' rel='stylesheet' type='text/css'>
+     <link href='dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,600,700|Raleway:100,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
@@ -35,6 +37,7 @@
                 <li class="main-menu__item"><a class="main-menu__action" href="#laCasa">La casa</a></li>
                 <li class="main-menu__item"><a class="main-menu__action" href="#porqueCoco">Porque coco</a></li>
                 <li class="main-menu__item"><a class="main-menu__action" href="#eventos">Eventos</a></li>
+                <li class="main-menu__item"><a class="main-menu__action" href="#galeria">Galeria</a></li>
                 <li class="main-menu__item"><a class="main-menu__action" href="#ubicacion">Ubicación</a></li>
                 <li class="main-menu__item"><a class="main-menu__action" href="#contacto">Contacto</a></li>
               </ul>
@@ -64,16 +67,17 @@
 
               <div class="main-laCasa__list   clearFlix">
                   <ul class="main-laCasa__listUl clearFlix">
-                      <li><img src="img/pineapple64.png" class="main-laCasa__images draw">Comida Fusión Tropical</li>
-                      <li><img src="img/wifi64.png" class="main-laCasa__images draw">Business Grade Internet</li>
-                      <li><img src="img/meeting64.png" class="main-laCasa__images draw">Meeting Rooms</li>
-                      <li><img src="img/shapes64.png" class="main-laCasa__images draw">Espacios Variados</li>
+                      <li><img src="img/pineapple64.png" class="main-laCasa__images draw" id="image1">Comida Fusión Tropical</li>
+                      <li><img src="img/wifi64.png" class="main-laCasa__images draw" id="image2">Business Grade Internet</li>
+                      <li><img src="img/meeting64.png" class="main-laCasa__images draw" id="image3">Meeting Rooms</li>
+                      <li><img src="img/shapes64.png" class="main-laCasa__images draw" id="image4">Espacios Variados</li>
                   </ul>
               </div>
               <div class="main-laCasa__slides clearFlix">
                     <img src="img/slider01.jpg" alt="" class="gallerySlide">
-                    <img src="img/slider02.jpg" alt="" class="gallerySlide">
                     <img src="img/slider03.jpg" alt="" class="gallerySlide">
+                    <img src="img/slide04.png" alt="" class="gallerySlide">
+                    <img src="img/slider02.jpg" alt="" class="gallerySlide">                 
               </div>
               <div class="main-laCasa__btns">
                 <button class="btn_left  main-laCasa__btn draw " id="btnleft"><</button>
@@ -188,6 +192,29 @@
         </section>
        <!-- End section of 'Eventos'  -->
 
+       <!-- Section Gallery and  testimony -->
+       <section class="l-group section-wrap" id="galeria">
+              <div class="group  positionGaleria">
+                <h2 class="h-section-optional">Galeria</h2>
+              </div>
+
+            <div class="container positionImages">
+                  <div class="gallery">
+                        <a href="img/image1.jpg" class="big"><img src="img/thumbs/thumb1.jpg" alt="" title="Espacios de Trabajo" /></a>
+                        <a href="img/image2.jpg"><img src="img/thumbs/thumb2.jpg" alt="" title="Espacios de Trabajo"/></a>
+                        <a href="img/image3.jpg"><img src="img/thumbs/thumb3.jpg" alt="" title="Espacios de Trabajo"/></a>
+                        <a href="img/image4.jpg"><img src="img/thumbs/thumb4.jpg" alt="" title="Espacios de Trabajo" /></a>
+                        <div class="clear"></div>
+
+                        <a href="img/image5.jpg"><img src="img/thumbs/thumb5.jpg" alt="" title="Espacios de Trabajo" /></a>
+                        <a href="img/image6.jpg"><img src="img/thumbs/thumb6.jpg" alt="" title="Espacios de Trabajo" /></a>
+                        <a href="img/image7.jpg" class="big"><img src="img/thumbs/thumb7.jpg" alt="" title="Espacios de Trabajo" /></a>
+                        <a href="img/image8.jpg"><img src="img/thumbs/thumb8.jpg" alt="" title="Espacios de Trabajo" /></a>
+                        <div class="clear"></div>
+                  </div>
+            </div>
+       </section>
+
        <section class="l-group section-wrap" id="ubicacion">
           <div class="group">
             <h2 class="h-section position">Ubicación</h2>
@@ -220,7 +247,9 @@
     </footer>
     <!-- Jump -->
     <a href="#" id="toTop" >^</a>
-<script type="text/javascript" src="jquery/dist/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="dist/simple-lightbox.js"></script>
+<!-- <script type="text/javascript" src="jquery/dist/jquery.js"></script> -->
  <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
