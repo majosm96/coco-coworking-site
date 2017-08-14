@@ -78,10 +78,6 @@ h4 {
     letter-spacing: -.3rem;
     padding: 0 .8rem 0 .4rem; }
 
-.position {
-  position: relative;
-  left: 292px; }
-
 .h-section {
   text-align: center;
   text-transform: uppercase; }
@@ -94,7 +90,7 @@ h4 {
 .h-page {
   color: inherit;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
+  margin-top: 20rem;
   margin-bottom: 0; }
 
 .h3-page {
@@ -240,7 +236,7 @@ svg:not(:root) {
   padding: 0.5rem;
   margin-right: 13px; }
 
-.main-laCasa__images:hover {
+.main-laCasa_colores {
   background-color: #e5a923;
   border: 3px solid #e5a923; }
 
@@ -342,9 +338,9 @@ figure {
   height: 380px;
   overflow: hidden;
   position: relative;
-  border: 6px solid black; }
+  border: 2px solid black; }
   figure:hover {
-    border-width: 9px; }
+    border-width: 2px; }
     figure:hover .main-eventos__title {
       transform: translate(0, 100px); }
     figure:hover img {
@@ -383,10 +379,10 @@ figure {
   padding: 36px; }
 
 #toTop {
-  border: 2px solid #000;
+  border: 2px solid #a2a5a5;
   cursor: pointer;
   text-decoration: none;
-  color: #000;
+  color: #a2a5a5;
   height: 50px;
   width: 50px;
   text-align: center;
@@ -399,6 +395,41 @@ figure {
 #toTop:hover {
   color: #e5a923;
   border: 2px solid #e5a923; }
+
+.clear {
+  clear: both;
+  float: none;
+  width: 100%; }
+
+.group.positionGaleria {
+  position: relative;
+  top: 65px; }
+
+.container .gallery a img {
+  float: left;
+  width: 20%;
+  height: auto;
+  border: 2px solid #fff;
+  -webkit-transition: -webkit-transform .15s ease;
+  -moz-transition: -moz-transform .15s ease;
+  -o-transition: -o-transform .15s ease;
+  -ms-transition: -ms-transform .15s ease;
+  transition: transform .15s ease;
+  position: relative; }
+
+.container .gallery a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 5; }
+
+.container .gallery a.big img {
+  width: 40%; }
+
+.align-center {
+  text-align: center; }
 
 .ubicacion__map {
   width: 80%;
@@ -580,9 +611,6 @@ figure {
 
 .wrapper {
   background-color: #fff; }
-
-.logo-img {
-  margin-top: 10rem; }
 
 .site-footer {
   background-color: #000;
